@@ -20,127 +20,32 @@ h2 {
     justify-content: center;
 }
 
+/* Selectores del header */
 
-
-/* Selectores de Carousel */
-
-#seguir_viendo {
-    height: 35vh;
-    background-color: #000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.5em;
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#para_ti {
-    height: 35vh;
-    background-color: #000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.5em;
+/* Selectores del nav */
+
+#menu {
+  display: flex;
+  justify-content: center;
 }
 
-#volver_aver {
-    height: 35vh;
-    background-color: #000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.5em;
+#menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-.items {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    user-select: none;
-    width: 95%;
-    height: 50vh;
-  }
-  
-  .items .item {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 350px;
-    height: 200px;
-    transition: all 300ms ease-in-out;
-    z-index: -1;
-    opacity: 0;
-    border-radius: 20px;
-  }
-  
-  .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-  
-  .item.active {
-    opacity: 1;
-    z-index: 99;
-    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
-  }
-  
-  .item.prev {
-    z-index: 2;
-    opacity: 0.25;
-    transform: translate(-165%, -50%);
-  }
-  
-  .item.next {
-    z-index: 2;
-    opacity: 0.25;
-    transform: translate(65%, -50%);
-  }
-  
-  .items .button-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    z-index: 100;
-  }
-  
-  .button-container .button {
-    color: #fff;
-    font-size: 32px;
-    cursor: pointer;
-    position: relative;
-    opacity: 0.5;
-    transition: all 300ms ease-in-out;
-  }
-  
-  .button-container .button:hover {
-    opacity: 1;
-  }
-  
-  .button-container .button:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 200px;
-    z-index: -99;
-  }
-  
-  .button-container .button:nth-child(1) {
-    float: left;
-  }
-  
-  .button-container .button:nth-child(2) {
-    float: right;
-  }
-
-
+#menu ul li {
+  margin: 2%;
+}
 
 /* Selectores del footer */
 
@@ -148,7 +53,7 @@ ul {
     list-style: none;
 }
 
-footer {
+.footer {
     height: 300px;
     background-color: rgb(0, 0, 0);
     width: 100%;
@@ -182,11 +87,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 -0.5rem 0;
 }
 
 .social li {
-    margin: 0 0.8em;
     margin-right: 2em;
     margin-left: 2em;
 }
@@ -224,7 +127,7 @@ footer {
 }
 
 .avisos li a:hover{
-    transform: scale(1.2);
+    text-decoration: underline;
 }
 
 .footer-copyright{
