@@ -71,6 +71,13 @@ header {
     margin: 0 15px;
 }
 
+.footer .social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .avisos {
     margin: 15px 0;
 }
