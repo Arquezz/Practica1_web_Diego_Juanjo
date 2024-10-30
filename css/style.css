@@ -7,7 +7,7 @@
 
 /* Estilos del body */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'neue-haas-grotesk-display', sans-serif;
 }
 
 /* Estilos del video de fondo */
@@ -31,9 +31,15 @@ header {
 /* Estilo del logo */
 .logo-container {
     position: absolute;
-    top: 40%; /* Centra verticalmente */
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra horizontalmente */
+    width: 100%;
+    transform: translate(-50%, -50%);
+    transition: margin-top 0.3s ease;
+}
+
+.logo-container.moved {
+  margin-top: 100px; /* Ajusta según el espacio necesario para el menú */
 }
 
 /* Estilos del menú */
@@ -43,6 +49,7 @@ header {
     left: 50%;
     transform: translateX(-50%); /* Centra horizontalmente */
     z-index: 2; /* Asegura que el menú esté delante del video */
+    transition: top 0.3s ease;
 }
 
 .nav-link {
@@ -125,3 +132,4 @@ h2 {
 .my-3 {
     margin-top: 20px;
 }
+
