@@ -2,15 +2,10 @@
     --color1: #FFFFFF;
     --color2: #0a0a0a; 
     --color3: #b52929; 
-    --title: 'Sagire', serif;
+    --title: 'Neue-Haas-Grotesk', sans-serif;
     --text:"Montserrat", sans-serif;
 }
 
-@font-face{
-    font-family:  'Sagire';
-    src:url(../fonts/Sagire-Ea2Dn.otf) format('truetype');
-    font-weight:100;
-}
 * {
     margin: 0;
     padding: 0;
@@ -135,4 +130,11 @@
 
 .footer .list-inline-item a:hover {
     color: var(--color3);
+}
+
+/* FIRMA */
+
+.firmadigital{
+    background-color: #b52929;
+    width: 100%;
 }
