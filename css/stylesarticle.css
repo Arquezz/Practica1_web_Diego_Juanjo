@@ -1,0 +1,132 @@
+:root {
+    --color1: #FFFFFF;
+    --color2: #0a0a0a; 
+    --color3: #b52929; 
+    --title: "trade-gothic-next", sans-serif;
+    --text:"trade-gothic-next-", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Estilos del HEADER */
+
+
+.header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Estilo del logo */
+.logo-container {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    transition: margin-top 0.3s ease;
+}
+
+.logo-container.moved {
+  margin-top: 100px; /* Ajusta según el espacio necesario para el menú */
+}
+
+/* NOTICIAS */
+
+#noticias {
+    background-color: var(--color1);
+    padding: 2em 0;
+}
+
+#noticias h1 {
+    font-family: var(--title);
+    margin: 2em;
+    text-align: center;
+    font-weight: 800;
+}
+
+#noticias h2 {
+    font-family: var(--title);
+    margin-bottom: 0.6em;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#noticias p {
+    text-align: center;
+}
+
+.btn {
+    border-radius: 30px;
+    border: 1px solid var(--color2);
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: var(--color2);
+    color: var(--color1);
+    transition-duration: 0.3s;
+}
+
+#noticias img {
+    border: 4px solid var(--color3);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+.footer {
+    background-color: #1c1c1c;
+    color: #ddd;
+}
+
+.footer h5 {
+    font-family: var(--title);
+    font-size: 1.25rem;
+}
+
+.footer .newsletter-form .form-control {
+    border-radius: 0;
+}
+
+.footer .newsletter-form .btn {
+    border-radius: 0;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.footer .newsletter-form .btn:hover {
+    background-color: var(--color3);
+    border-color: var(--color3);
+    color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--color3);
+}
+
+.footer .list-inline-item a {
+    font-size: 1.25rem;
+    transition: color 0.3s;
+}
+
+.footer .list-inline-item a:hover {
+    color: var(--color3);
+}
+
+/* FIRMA */
+
+.firmadigital{
+    background-color: #b52929;
+    width: 100%;
+}
