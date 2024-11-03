@@ -13,28 +13,24 @@
     scroll-behavior: smooth;
 }
 
+/* Estilos del NAV */
+
+
+
 /* Estilos del HEADER */
 
 
 .header {
-    position: relative;
-    height: 100vh;
+    position: absolute;
     overflow: hidden;
+    width: 100%;
 }
 
 /* Estilo del logo */
 .logo-container {
-    position: absolute;
-    top: 5%;
-    left: 90%;
     width: 100%;
-    transform: translate(-50%, -50%);
-    transition: margin-top 0.3s ease;
 }
 
-.logo-container.moved {
-  margin-top: 100px; /* Ajusta según el espacio necesario para el menú */
-}
 
 /* NOTICIAS */
 
