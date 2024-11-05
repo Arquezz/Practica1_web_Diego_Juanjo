@@ -43,6 +43,42 @@
 .logo-container.moved {
   margin-top: 100px; /* Ajusta según el espacio necesario para el menú */
 }
+/*MENU*/
+/* Estilos para el menú hamburguesa */
+.navbar-toggler {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    background-color: var(--color3); /* Color del botón hamburguesa */
+    border: none;
+}
+
+.offcanvas-start {
+    background-color: var(--color3); /* Fondo deslizante en color --color3 */
+    width: 70%; /* Ajusta el ancho del menú deslizante */
+}
+
+.offcanvas-title {
+    color: var(--color1); /* Color del título del menú */
+}
+
+.offcanvas .nav-link {
+    color: var(--color1); /* Color de los enlaces */
+    font-family: var(--title);
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.offcanvas .nav-link:hover {
+    color: var(--color2); /* Color al pasar el cursor */
+}
+
+.offcanvas .btn-close {
+    background: var(--color1);
+    border: none;
+    filter: invert(100%);
+}
 
 /* NOTICIAS */
 
