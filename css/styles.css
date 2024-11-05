@@ -1,7 +1,8 @@
 :root {
     --color1: #FFFFFF;
-    --color2: #0a0a0a; 
+    --color2: #1c1c1c; 
     --color3: #b52929; 
+    --color4: #651717; 
     --title: "trade-gothic-next", sans-serif;
     --text:"trade-gothic-next-", sans-serif;
 }
@@ -108,13 +109,16 @@
 }
 
 .btn {
-    border-radius: 30px;
     border: 1px solid var(--color2);
     font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0 !important;
+    background-color: #b52929;
+    color: #ffffff;
 }
 
 .btn:hover {
-    background-color: var(--color3);
+    background-color: var(--color4);
     color: var(--color1);
     transition-duration: 0.3s;
 }
@@ -167,6 +171,18 @@
 
 .footer .list-inline-item a:hover {
     color: var(--color3);
+}
+
+.mt5{
+    margin-top: 0 !important;
+}
+
+.pt-5{
+    padding: 0 !important;
+}
+
+.pb-4{
+    padding-top: 0 !important;
 }
 
 /* FIRMA */
