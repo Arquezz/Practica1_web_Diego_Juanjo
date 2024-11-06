@@ -29,21 +29,31 @@
     display: flex;
     align-items: center;
 }
+.logo-container a {
+    display: inline-block;
+    width:100%;
+  
+}
 
+.logo-container a:hover {
+    opacity: 0.8; /* Efecto de opacidad al pasar el ratón */
+    transition: opacity 0.3s ease;
+}
 /* Estilo del logo */
 .logo-container {
     width:100%;
     display: flex;
     justify-content: center;
+    padding-top: 1rem;
 }
 
 
 /* NOTICIAS */
-
-#noticias {
-    background-color: var(--color1);
-    padding: 7vh 0;
+.mt-3 {
+    padding-left: 20%; /* Añadir espaciado en los laterales */
+    padding-right: 20%;
 }
+
 
 #noticias h1 {
     font-family: var(--title);
