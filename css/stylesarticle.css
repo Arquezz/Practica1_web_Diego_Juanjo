@@ -1,6 +1,6 @@
 :root {
     --color1: #FFFFFF;
-    --color2: #0a0a0a; 
+    --color2: #1c1c1c; 
     --color3: #b52929; 
     --title: "trade-gothic-next", sans-serif;
     --text:"trade-gothic-next-", sans-serif;
@@ -32,7 +32,6 @@
 .logo-container a {
     display: inline-block;
     width:100%;
-  
 }
 
 .logo-container a:hover {
@@ -74,9 +73,9 @@
 }
 
 #portada_noticias {
-    height: 600px;
+    height: 100vh;
     width: 100vw;
-    background-image: url(../media/img/DeiVbedman.es.jpg);
+    background-image: url(../media/img/gente_concierto.png);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -86,10 +85,17 @@
     padding: 0 !important;
 }
 
+.col-12 img {
+    height: 35vh !important;
+}
+
 .btn {
     border-radius: 30px;
-    border: 1px solid var(--color2);
     font-size: 1rem;
+    font-weight: 600;
+    background-color: #b52929;
+    color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover {
@@ -100,57 +106,60 @@
 
 #noticias img {
     width: 100%;
-    height: auto;
+    height: 30vh;
     object-fit: cover;
     margin-bottom: 1em;
 }
 
 .footer {
-    background-color: #1c1c1c;
-    color: #ddd;
-}
-
-.footer h5 {
-    font-family: var(--title);
-    font-size: 1.25rem;
-}
-
-.footer .newsletter-form .form-control {
-    border-radius: 0;
-}
-
-.footer .newsletter-form .btn {
-    border-radius: 0;
-    border: 1px solid #fff;
-    color: #fff;
-}
-
-.footer .newsletter-form .btn:hover {
-    background-color: var(--color3);
-    border-color: var(--color3);
-    color: #fff;
+    background-color: var(--color-dark);
+    color: var(--color-primary);
 }
 
 .footer a {
-    text-decoration: none;
+    color: var(--color-primary);
 }
 
-.footer a:hover {
-    color: var(--color3);
+.footer li {
+    font-size: 1em !important;
 }
 
-.footer .list-inline-item a {
-    font-size: 1.25rem;
-    transition: color 0.3s;
+.pb-4 {
+    padding-bottom: 0 !important;
 }
 
-.footer .list-inline-item a:hover {
-    color: var(--color3);
+#group {
+    font-size: 1em;
+}
+
+#social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#social i {
+margin-right: 0.7em;
+}
+
+input[type="email"] {
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
 }
 
 /* FIRMA */
 
-.firmadigital{
+#copyright {
     background-color: #b52929;
+    height: 5vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#copyright p {
+    margin-bottom: 0 !important;
+}
+
