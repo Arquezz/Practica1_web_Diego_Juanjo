@@ -15,11 +15,11 @@
 }
 
 
-
 .header {
     position: relative;
     overflow: hidden;
 }
+
 .bg-video {
     width: 100%;
     height: 100vh;
@@ -40,13 +40,59 @@
 
 /*MENU*/
 .container {
-
     font-size: 1.25rem; 
     padding: 0 15px; 
     transition: color 0.3s;
 }
 
 /* Estilos para el menú hamburguesa */
+
+.navbar {
+    background-color: #1c1c1c;
+    padding: 0;
+}
+
+.navbar li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-family: trade-gothic-next-condensed, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.navbar li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    width: 0;
+    height: 3px;
+    background-color: #ffffff; /* Color de la línea */
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+.collapse {
+    height: 7vh;
+}
+
+.nav-link:hover {
+    color: #FFFFFF !important;
+}
+
+.collapse li a {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
 .navbar-toggler {
     position: absolute;
     top: 20px;
@@ -54,6 +100,18 @@
     z-index: 10;
     background-color: var(--color3); /* Color del botón hamburguesa */
     border: none;
+}
+
+.btn-close {
+    background-color: transparent; /* Sin fondo */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    opacity: 1;
+}
+
+.btn-close:hover {
+    color: #d3d3d3; /* Cambia el color a gris claro en hover */
+    background-color: transparent;
 }
 
 .offcanvas-start {
@@ -68,8 +126,7 @@
 .offcanvas .nav-link {
     color: var(--color1); /* Color de los enlaces */
     font-family: var(--title);
-    font-size: 1.25rem;
-    margin: 1rem 0;
+    font-size: 2.5rem;
 }
 
 .offcanvas .nav-link:hover {
@@ -180,4 +237,61 @@ input[type="email"] {
 
 #copyright p {
     margin-bottom: 0 !important;
+}
+
+
+
+
+/* Estilos personalizados para el botón del menú */
+.custom-toggler {
+    border: none; /* Sin borde */
+    background-color: #1c1c1c; /* Fondo negro */
+    border-radius: 30px; /* Bordes redondeados estilo pastilla */
+    padding: 5px 10px; /* Sin fondo */
+    width: 80px;
+    height: 40px;
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra las barras horizontalmente */
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .custom-toggler .navbar-toggler-icon {
+    background-image: none;
+    display: inline-block;
+    position: relative;
+    width: 24px; /* Ajusta el ancho de las barras */
+    height: 2px; /* Grosor de las barras */
+    background-color: white; /* Color blanco para las barras */
+  }
+  
+  .custom-toggler .navbar-toggler-icon::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: 6px;
+    background-color: white; /* Color blanco para las barras superior e inferior */
+  }
+  .custom-toggler .navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: -6px;
+    background-color: white; /* Color blanco para las barras superior e inferior */
+  }
+  
+  .custom-toggler .navbar-toggler-icon::before {
+    top: -8px; /* Espacio entre la barra superior y la barra central */
+  }
+  
+  .custom-toggler .navbar-toggler-icon::after {
+    top: 8px; /* Espacio entre la barra inferior y la barra central */
+  }
+  
+  .custom-toggler:focus,
+.custom-toggler:active {
+  outline: none; /* Elimina el borde de enfoque */
+  box-shadow: none; /* Elimina cualquier sombra */
 }
