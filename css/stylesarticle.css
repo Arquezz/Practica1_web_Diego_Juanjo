@@ -2,6 +2,7 @@
     --color1: #FFFFFF;
     --color2: #1c1c1c; 
     --color3: #b52929; 
+    --color4: #651717; 
     --title: "trade-gothic-next", sans-serif;
     --text:"trade-gothic-next-", sans-serif;
 }
@@ -24,28 +25,21 @@
     position: absolute;
     overflow: hidden;
     width: 100%;
-    height: 7vh;
+    height: 7vh; /* Ajusta la altura del header según el tamaño deseado */
     background-color: #0a0a0a;
     display: flex;
-    align-items: center;
-}
-.logo-container a {
-    display: inline-block;
-    width:100%;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
 }
 
-.logo-container a:hover {
-    opacity: 0.8; /* Efecto de opacidad al pasar el ratón */
-    transition: opacity 0.3s ease;
-}
-/* Estilo del logo */
-.logo-container {
-    width:100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
+#header-logo {
+    width: 150px; /* Ajusta según el tamaño deseado */
+    transition: filter 0.3s ease;
 }
 
+#header-logo:hover {
+    filter: brightness(0) saturate(100%) invert(21%) sepia(75%) saturate(600%) hue-rotate(345deg) brightness(95%) contrast(120%);
+}
 
 /* NOTICIAS */
 .mt-3 {
@@ -81,6 +75,8 @@
     background-size: cover;
 }
 
+
+  
 .col-12{
     padding: 0 !important;
 }
