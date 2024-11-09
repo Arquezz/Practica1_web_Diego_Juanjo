@@ -42,10 +42,8 @@
 }
 
 /* NOTICIAS */
-.mt-3 {
-    padding-left: 20%; /* Añadir espaciado en los laterales */
-    padding-right: 20%;
-}
+
+
 
 /* Título de la portada */
 .titulos {
@@ -97,7 +95,13 @@
 }
 
 #noticias p {
-    text-align: center;
+    text-align: justify;
+}
+
+#noticias strong {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: center !important;
 }
 
 #portada_noticias {
@@ -129,7 +133,7 @@
 }
 
 .btn:hover {
-    background-color: var(--color2);
+    background-color: var(--color4);
     color: var(--color1);
     transition-duration: 0.3s;
 }

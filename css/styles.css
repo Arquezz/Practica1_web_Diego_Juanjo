@@ -14,7 +14,6 @@
     scroll-behavior: smooth;
 }
 
-
 .header {
     position: relative;
     overflow: hidden;
@@ -102,18 +101,6 @@
     border: none;
 }
 
-.btn-close {
-    background-color: transparent; /* Sin fondo */
-    color: white; /* Color de texto blanco */
-    border: none; /* Sin borde */
-    opacity: 1;
-}
-
-.btn-close:hover {
-    color: #d3d3d3; /* Cambia el color a gris claro en hover */
-    background-color: transparent;
-}
-
 .offcanvas-start {
     background-color: var(--color3); /* Fondo deslizante en color --color3 */
     width: 70%; /* Ajusta el ancho del menú deslizante */
@@ -134,9 +121,20 @@
 }
 
 .offcanvas .btn-close {
-    background: var(--color1);
     border: none;
     filter: invert(100%);
+    opacity: 1;
+    margin-bottom: 1em;
+}
+
+
+.offcanvas .btn-close:hover {
+    background-color: #d5cbec46;
+    transition: 0.3s;
+}
+
+.offcanvas .btn-close:focus {
+    box-shadow: none !important;
 }
 
 /* NOTICIAS */
@@ -148,7 +146,6 @@
 
 #noticias h1 {
     font-family: var(--title);
-    margin: 2em;
     text-align: center;
     font-weight: 800;
     font-style: italic;
@@ -182,9 +179,10 @@
 
 #noticias img {
     width: 100%;
-    height: auto;
+    height: 45vh;
     object-fit: cover;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .footer {
@@ -224,6 +222,10 @@ input[type="email"] {
     padding: 10px;
 }
 
+/* NEWSLETTER */
+
+
+
 /* FIRMA */
 
 #copyright {
@@ -245,7 +247,7 @@ input[type="email"] {
 /* Estilos personalizados para el botón del menú */
 .custom-toggler {
     border: none; /* Sin borde */
-    background-color: #1c1c1c; /* Fondo negro */
+    background-color: var(--color3);
     border-radius: 30px; /* Bordes redondeados estilo pastilla */
     padding: 5px 10px; /* Sin fondo */
     width: 80px;
@@ -254,6 +256,12 @@ input[type="email"] {
     justify-content: center; /* Centra las barras horizontalmente */
     align-items: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .custom-toggler:hover {
+    background-color: var(--color4);
+    color: var(--color1);
+    transition-duration: 0.3s;
   }
   
   .custom-toggler .navbar-toggler-icon {
@@ -294,4 +302,11 @@ input[type="email"] {
 .custom-toggler:active {
   outline: none; /* Elimina el borde de enfoque */
   box-shadow: none; /* Elimina cualquier sombra */
+}
+
+@media (max-width: 1199px) {
+    #invertir {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
