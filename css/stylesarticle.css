@@ -47,14 +47,48 @@
     padding-right: 20%;
 }
 
-
+/* Título de la portada */
+.titulos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--title);
+    font-weight: 800;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
 #noticias h1 {
     font-family: var(--title);
-    margin: 2em;
+ 
     text-align: center;
     font-weight: 800;
 }
 
+.flecha-abajo {
+    position: absolute;
+    bottom: 60px; /* Ajusta la distancia del fondo */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: var(--color1);
+    background-color: var(--color3); /* Fondo rojo */
+    width: 50px;  /* Ancho fijo */
+    height: 50px; /* Alto fijo */
+    border-radius: 50%; /* Hace el fondo circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+
+.flecha-abajo:hover {
+    transform: translateX(-50%) translateY(5px);
+}
 #noticias h2 {
     font-family: var(--title);
     margin-bottom: 0.6em;
