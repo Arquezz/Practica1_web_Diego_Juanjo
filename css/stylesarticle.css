@@ -20,6 +20,9 @@
 
 /* Estilos del HEADER */
 
+/* p{
+    margin: 3em;
+} */
 
 .header {
     position: absolute;
@@ -94,14 +97,44 @@
     font-size: 2rem;
 }
 
-#noticias p {
-    text-align: justify;
+.cabecera-noticia{
+    padding: 3em;
+}
+
+.pt-noticias{
+    text-align:center;
+    margin: 1em 4em 0em 4em;
+    font-size: larger;
+}
+
+.cabecera-noticia h2{
+    font-weight: 700;
+    margin-top: 1em;
+    text-align: center;
+
 }
 
 #noticias strong {
     font-size: 1.5em;
     font-weight: 800;
     text-align: center !important;
+}
+
+
+#noticia2 h3{
+    font-weight: 800;
+    margin-top: 2em;
+    text-align: center;
+}
+
+#noticia2 img{
+    margin-top: 3em;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    margin-bottom: 1em;
+    border-radius: 5px;
+
 }
 
 #portada_noticias {
@@ -120,7 +153,11 @@
 }
 
 .col-12 img {
-    height: 35vh !important;
+    height: 40vh;
+    width: 80vh;
+    object-fit: cover;
+    margin: 1em;
+    border-radius: 10px;
 }
 
 .btn {
@@ -138,12 +175,143 @@
     transition-duration: 0.3s;
 }
 
-#noticias img {
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
-    margin-bottom: 1em;
+
+
+#carouselNoticiasRelacionadas h3{
+    font-size: 2vh;
 }
+
+.noticia{
+    text-align: justify;
+}
+
+#noticias{
+    margin-bottom: 6vh;
+}
+
+
+.marquee {
+    width: 100%;
+    height: 90px;
+    background-color: var(--color3);
+    overflow: hidden;
+  }
+  
+  .marquee li {
+    font-size: 6vh;
+    color: var(--color1);
+    font-weight: 800;
+  }
+  
+  .marquee__content {
+    display: flex;
+    list-style: none;
+    animation: scrolling 10s linear infinite;
+  }
+  
+  .marquee__item {
+    flex-shrink: 0;
+  }
+  
+  @keyframes scrolling {
+    0% { transform: translateX(0) }
+    100% { transform: translateX(-100%) }
+  }
+
+/* ESTO SON LOS SELECTORES PARA LAS FLECHAS DEL CARRUSEL 
+.carousel-control-next-icon{
+    background-color: var(--color3);
+    border-radius: 100%;
+    padding-left: 4em;
+}
+
+.carousel-control-prev-icon{
+    background-color: var(--color3);
+    border-radius: 100%;
+}*/
+
+
+
+
+#carrusel-rel .carousel-item img {
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+}
+
+
+/* .carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: var(--color3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size:70%; 
+    color: var(--color1);
+    font-weight: 900;
+} */
+
+/* Ajuste de los controles de navegación */
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: red; /* Fondo sólido rojo */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Asegura que el icono de la flecha sea blanco */
+    margin-left: 30px; /* Espacio desde el borde para la flecha izquierda */
+    margin-right: 30px; /* Espacio desde el borde para la flecha derecha */
+    opacity: 1; /* Fondo sin transparencia */
+    font-size: 20px; /* Tamaño de la flecha */
+}
+
+/* Efecto hover en los controles de navegación */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: darkred; /* Color oscuro al pasar el cursor */
+}
+
+/* Estilo de las flechas en blanco */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Fondo transparente para las flechas */
+    color: white; /* Flechas en color blanco */
+}
+
+/* Usar el icono de la flecha de Bootstrap */
+.carousel-control-prev-icon::before {
+    content: '\00ab'; /* Código Unicode para la flecha hacia la izquierda */
+    font-size: 30px; /* Tamaño de la flecha */
+    color: white; /* Color blanco para la flecha */
+}
+
+.carousel-control-next-icon::before {
+    content: '\00bb'; /* Código Unicode para la flecha hacia la derecha */
+    font-size: 30px; /* Tamaño de la flecha */
+    color: white; /* Color blanco para la flecha */
+}
+
+
+
+
+
+
+
 
 .footer {
     background-color: var(--color2);
