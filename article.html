@@ -77,14 +77,11 @@
     </header>
 
 <main>
-    
-    <section id="noticias">
-      
+    <section>
         <div class="container-fluid text-center mb-5">
-            <!-- Noticia principal ocupando el ancho completo -->
             <div class="row">
                 <div id="portada_noticias" class="col-12">
-                    <img src="media/img/portada_noticia.jpg" class="img-fluid" alt="Portada de noticia">
+                    <img src="media/img/portada_noticia.jpg" class="img-fluid portada-img" alt="Portada de noticia">
                 </div>
                 <div class="col-12">
                     <h1 class="titulos">CONCIERTO DE DEI V EN MADRID</h1>
@@ -93,7 +90,11 @@
                     <i class="fas fa-arrow-down"></i>
                 </a>
             </div>
-            </div>
+        </div>
+    </section>
+    <section id="noticias">
+      
+        
 
                 <div  class="cabecera-noticia">
                 
@@ -152,6 +153,12 @@
                       <li class="marquee__item">&nbsp; ACERO &bull; </li>
                       <li class="marquee__item">&nbsp; ACERO &bull; </li>
                       <li class="marquee__item">&nbsp; ACERO &bull; </li>
+                      <li class="marquee__item">&nbsp; ACERO &bull; </li>
+                      <li class="marquee__item">&nbsp; ACERO &bull; </li>
+                      <li class="marquee__item">&nbsp; ACERO &bull; </li>
+                      <li class="marquee__item">&nbsp; ACERO &bull; </li>
+                      <li class="marquee__item">&nbsp; ACERO &bull; </li>
+                      <li class="marquee__item">&nbsp; ACERO &bull; </li>
                     </ul>
                   </div>
 
@@ -172,74 +179,66 @@
 
 
                 <section id="carrusel-rel">
-
-            <!-- Noticias relacionadas con carrusel, también ocupando el ancho completo -->
-
-            <div class="container">
-
-            
-            <div id="carouselNoticiasRelacionadas" class="carousel slide mt-5" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Primera fila de noticias -->
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h3>Entrevista Exlusiva a Tiago PZK sobre FMS</h3>
-                                <img src="media/img/entrevistatiagopzk.png" class="img-fluid" alt="Noticia relacionada 1">
-                                <p>Tiago habla de FMS WORLD SERIES y le manda un mensaje a Chuty.</p>
-                                <button type="button" class="btn btn-outline-secondary">SABER MÁS</button>
+                    <div class="container">
+                        <div id="carouselNoticiasRelacionadas" class="carousel slide mt-5" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Primera fila de noticias -->
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-4 d-flex flex-column align-items-center text-center">
+                                            <h3>Entrevista Exclusiva a Tiago PZK sobre FMS</h3>
+                                            <img src="media/img/entrevistatiagopzk.png" class="img-fluid noticia-img" alt="Noticia relacionada 1">
+                                            <p>Tiago habla de FMS WORLD SERIES y le manda un mensaje a Chuty.</p>
+                                            <button type="button" class="btn btn-outline-secondary mt-auto">SABER MÁS</button>
+                                        </div>
+                                        <div class="col-md-4 d-flex flex-column align-items-center text-center">
+                                            <h3>Cruz Cafuné lanza dos remixes "blu€s (d€lux€)"</h3>
+                                            <img src="media/img/Cruz-Cafune_8.webp" class="img-fluid noticia-img" alt="Noticia relacionada 2">
+                                            <p>Una versión expandida de su EP que no deja de acumular buenas críticas y sorpresas. </p>
+                                            <button type="button" class="btn btn-outline-secondary mt-auto">SABER MÁS</button>
+                                        </div>
+                                        <div class="col-md-4 d-flex flex-column align-items-center text-center">
+                                            <h3>Sofía Gabanna se sincera ante las cámaras</h3>
+                                            <img src="media/img/SofiaGabanna-2.webp" class="img-fluid noticia-img" alt="Noticia relacionada 3">
+                                            <p>La artista hispano-argentina es una de las figuras más atípicas de la escena musical.</p>
+                                            <button type="button" class="btn btn-outline-secondary mt-auto">SABER MÁS</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Segunda fila de noticias -->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-4 d-flex flex-column align-items-center text-center">
+                                            <h3>Agenda semanal exclusiva en Acero Magazine</h3>
+                                            <img src="media/img/conci.webp" class="img-fluid noticia-img" alt="Noticia relacionada 4">
+                                            <p>De esto van estas semanas. Todos los conciertos disponibles de Noviembre.</p>
+                                            <button type="button" class="btn btn-outline-secondary mt-auto">SABER MÁS</button>
+                                        </div>
+                                        <div class="col-md-4 d-flex flex-column align-items-center text-center">
+                                            <h3>Tyler, The Creator conmueve con 'Chromakopia'</h3>
+                                            <img src="media/img/ACERO-TYLER-DISCO.webp" class="img-fluid noticia-img" alt="Noticia relacionada 5">
+                                            <p>El rapero californiano entrega otro álbum aventurero y con halo intimista.</p>
+                                            <button type="button" class="btn btn-outline-secondary mt-auto">SABER MÁS</button>
+                                        </div>
+                                        <div class="col-md-4 d-flex flex-column align-items-center text-center">
+                                            <h3>SamuraÏ - Con la artillería cargada y lista</h3>
+                                            <img src="media/img/samurai-acero-2.webp" class="img-fluid noticia-img" alt="Noticia relacionada 6">
+                                            <p>Hace un año la entrevistamos con motivo del lanzamiento de Artillería.</p>
+                                            <button type="button" class="btn btn-outline-secondary mt-auto">SABER MÁS</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <h3>Cruz Cafuné lanza dos remixes "blu€s (d€lux€)"</h3>
-                                <img src="media/img/Cruz-Cafune_8.webp" class="img-fluid" alt="Noticia relacionada 2">
-                                <p>Una versión expandida de su EP que no deja de acumular buenas críticas y sorpresas.</p>
-                                <button type="button" class="btn btn-outline-secondary">SABER MÁS</button>
-                            </div>
-                            <div class="col-md-4">
-                                <h3>Sofía Gabanna se sincera ante las cámaras</h3>
-                                <img src="media/img/SofiaGabanna-2.webp" class="img-fluid" alt="Noticia relacionada 3">
-                                <p>La artista hispano-argentina es una de las figuras más atípicas de la escena musical.</p>
-                                <button type="button" class="btn btn-outline-secondary">SABER MÁS</button>
-                            </div>
+                            <!-- Controles del carrusel -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticiasRelacionadas" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticiasRelacionadas" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </button>
                         </div>
                     </div>
-
-                    <!-- Segunda fila de noticias -->
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h3>Agenda semanal exclusiva en Acero Magazine</h3>
-                                <img src="media/img/conci.webp" class="img-fluid" alt="Noticia relacionada 4">
-                                <p>De festival en festival y tiramos porque nos da la gana. De esto van estas semanas, ¿verdad? Pues esta que entra la tenemos por partida doble.</p>
-                                <button type="button" class="btn btn-outline-secondary">SABER MÁS</button>
-                            </div>
-                            <div class="col-md-4">
-                                <h3>Tyler, The Creator conmueve con 'Chromakopia'</h3>
-                                <img src="media/img/ACERO-TYLER-DISCO.webp" class="img-fluid" alt="Noticia relacionada 5">
-                                <p>El rapero californiano entrega otro álbum de altos vuelos, aventurero y con halo intimista, en el que evoca sus años de infancia y adolescencia, y cavila en torno al culto.</p>
-                                <button type="button" class="btn btn-outline-secondary">SABER MÁS</button>
-                            </div>
-                            <div class="col-md-4">
-                                <h3>SamuraÏ - Con la artillería cargada y lista</h3>
-                                <img src="media/img/samurai-acero-2.webp" class="img-fluid" alt="Noticia relacionada 6">
-                                <p>Hace un año la entrevistamos con motivo del lanzamiento de Artillería. Esta vez en plena presentación de su EP durante la gira de festivales Samurai On Tour.</p>
-                                <button type="button" class="btn btn-outline-secondary">SABER MÁS</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Controles del carrusel -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticiasRelacionadas" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticiasRelacionadas" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
-            </div>
-        </div>
-    
-    </section>
+                </section>
 
 </main>
 
@@ -299,10 +298,9 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
 
-<script src="script.js"></script>
+  
+
+<script src="js/script.js"></script>
 </body>
 </html>

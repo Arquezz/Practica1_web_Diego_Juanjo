@@ -257,6 +257,7 @@
 .flecha-abajo:hover {
     transform: translateX(-50%) translateY(5px);
 }
+
 #noticias h2 {
     font-family: var(--title);
     margin-bottom: 0.6em;
@@ -272,6 +273,7 @@
     text-align:center;
     margin: 1em 4em 0em 4em;
     font-size: larger;
+    padding: 0 2em;
 }
 
 .cabecera-noticia h2{
@@ -320,12 +322,13 @@
 }
 
 .col-12 img {
-    height: 40vh;
-    width: 80vh;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    margin: 1em;
+    margin: 1em 0;
     border-radius: 10px;
 }
+
 
 .btn {
     border-radius: 30px;
@@ -378,6 +381,7 @@
     list-style: none;
     animation: scrolling 10s linear infinite;
     margin: 0 !important;
+    
   }
   
   .marquee__item {
@@ -389,94 +393,68 @@
     100% { transform: translateX(-100%) }
   }
 
-/* ESTO SON LOS SELECTORES PARA LAS FLECHAS DEL CARRUSEL 
-.carousel-control-next-icon{
-    background-color: var(--color3);
-    border-radius: 100%;
-    padding-left: 4em;
+
+
+
+
+/* Estilo para imágenes cuadradas y alineadas */
+.noticia-img {
+    width: 100%;
+    height: 300px; /* Ajuste de altura para mantener proporción cuadrada */
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.carousel-control-prev-icon{
-    background-color: var(--color3);
-    border-radius: 100%;
-}*/
-
-
-
-
-#carrusel-rel .carousel-item img {
-    width: 100%; 
-    height: 250px; 
-    object-fit: cover; 
-}
-
-
-/* .carousel-control-prev,
-.carousel-control-next {
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: var(--color3);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color1);
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-size:70%; 
-    color: var(--color1);
-    font-weight: 900;
-} */
-
-/* Ajuste de los controles de navegación */
+/* Ajuste de los controles de navegación del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: red; /* Fondo sólido rojo */
+    position: absolute;
+    top: 35%; /* Coloca los controles más arriba */
+    width: 45px;
+    height: 45px;
+    background-color: var(--color3);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white; /* Asegura que el icono de la flecha sea blanco */
-    margin-left: 30px; /* Espacio desde el borde para la flecha izquierda */
-    margin-right: 30px; /* Espacio desde el borde para la flecha derecha */
-    opacity: 1; /* Fondo sin transparencia */
-    font-size: 20px; /* Tamaño de la flecha */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+    transition: all 0.3s ease;
 }
 
-/* Efecto hover en los controles de navegación */
+.carousel-control-prev {
+    left: -20px;
+}
+
+.carousel-control-next {
+    right: -20px;
+}
+
+/* Efecto hover en los controles */
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    background-color: darkred; /* Color oscuro al pasar el cursor */
+    background-color: var(--color4);
+    transform: scale(1.1);
 }
 
-/* Estilo de las flechas en blanco */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: transparent; /* Fondo transparente para las flechas */
-    color: white; /* Flechas en color blanco */
+/* Alineación vertical de elementos en cada columna del carrusel */
+.carousel-item .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
 }
 
-/* Usar el icono de la flecha de Bootstrap */
-.carousel-control-prev-icon::before {
-    content: '\00ab'; /* Código Unicode para la flecha hacia la izquierda */
-    font-size: 30px; /* Tamaño de la flecha */
-    color: white; /* Color blanco para la flecha */
+.carousel-item h3,
+.carousel-item p {
+    margin: 10px 0;
 }
 
-.carousel-control-next-icon::before {
-    content: '\00bb'; /* Código Unicode para la flecha hacia la derecha */
-    font-size: 30px; /* Tamaño de la flecha */
-    color: white; /* Color blanco para la flecha */
+.carousel-item button {
+    margin-top: auto;
 }
-
 
 
 
@@ -541,3 +519,35 @@ input[type="email"] {
 #copyright p {
     margin-bottom: 0 !important;
 }
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    .col-xl-7, .col-xl-5 {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pt-noticias, .noticia {
+        padding: 0 1em; /* Reduce el espacio lateral en pantallas más pequeñas */
+    }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    .cabecera-noticia {
+        padding: 1em;
+       
+    }
+
+    .pt-noticias {
+        margin: 0.5em;
+
+    }
+
+}
+
+

@@ -1,5 +1,7 @@
-// Cerrar Menu FullScreen //
+// Inicializar AOS
+AOS.init();
 
+// Cerrar Menu FullScreen
 $(document).ready(function() {
     $('#offcanvasNavbar .nav-link').on('click', function() {
         $('#offcanvasNavbar').offcanvas('hide');
