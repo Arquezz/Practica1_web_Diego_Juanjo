@@ -44,6 +44,173 @@
     filter: brightness(0) saturate(100%) invert(21%) sepia(75%) saturate(600%) hue-rotate(345deg) brightness(95%) contrast(120%);
 }
 
+
+
+
+/*MENU*/
+.container {
+    font-size: 1.25rem; 
+    padding: 0 15px; 
+    transition: color 0.3s;
+}
+
+/* Estilos para el menú hamburguesa */
+
+.navbar {
+    background-color: #1c1c1c;
+    padding: 0;
+}
+
+.navbar li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-family: trade-gothic-next-condensed, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.navbar li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    width: 0;
+    height: 3px;
+    background-color: #ffffff; /* Color de la línea */
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+.collapse {
+    height: 7vh;
+}
+
+.nav-link:hover {
+    color: #FFFFFF !important;
+}
+
+.collapse li a {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    background-color: var(--color3); /* Color del botón hamburguesa */
+    border: none;
+}
+
+.offcanvas-start {
+    background-color: var(--color3); /* Fondo deslizante en color --color3 */
+    width: 70%; /* Ajusta el ancho del menú deslizante */
+}
+
+.offcanvas-title {
+    color: var(--color1); /* Color del título del menú */
+}
+
+.offcanvas .nav-link {
+    color: var(--color1); /* Color de los enlaces */
+    font-family: var(--title);
+    font-size: 2.5rem;
+}
+
+.offcanvas .nav-link:hover {
+    color: var(--color2); /* Color al pasar el cursor */
+}
+
+.offcanvas .btn-close {
+    border: none;
+    filter: invert(100%);
+    opacity: 1;
+    margin-bottom: 1em;
+}
+
+
+.offcanvas .btn-close:hover {
+    background-color: #d5cbec46;
+    transition: 0.3s;
+}
+
+.offcanvas .btn-close:focus {
+    box-shadow: none !important;
+}
+
+/* Estilos personalizados para el botón del menú */
+.custom-toggler {
+    border: none; /* Sin borde */
+    background-color: var(--color3);
+    border-radius: 30px; /* Bordes redondeados estilo pastilla */
+    padding: 5px 10px; /* Sin fondo */
+    width: 80px;
+    height: 40px;
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra las barras horizontalmente */
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .custom-toggler:hover {
+    background-color: var(--color4);
+    color: var(--color1);
+    transition-duration: 0.3s;
+  }
+  
+  .custom-toggler .navbar-toggler-icon {
+    background-image: none;
+    display: inline-block;
+    position: relative;
+    width: 24px; /* Ajusta el ancho de las barras */
+    height: 2px; /* Grosor de las barras */
+    background-color: white; /* Color blanco para las barras */
+  }
+  
+  .custom-toggler .navbar-toggler-icon::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: 6px;
+    background-color: white; /* Color blanco para las barras superior e inferior */
+  }
+  .custom-toggler .navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: -6px;
+    background-color: white; /* Color blanco para las barras superior e inferior */
+  }
+  
+  .custom-toggler .navbar-toggler-icon::before {
+    top: -8px; /* Espacio entre la barra superior y la barra central */
+  }
+  
+  .custom-toggler .navbar-toggler-icon::after {
+    top: 8px; /* Espacio entre la barra inferior y la barra central */
+  }
+  
+  .custom-toggler:focus,
+.custom-toggler:active {
+  outline: none; /* Elimina el borde de enfoque */
+  box-shadow: none; /* Elimina cualquier sombra */
+}
+
+
+
+
+
 /* NOTICIAS */
 
 
@@ -318,7 +485,7 @@
 
 
 .footer {
-    background-color: var(--color2);
+    background-color: var(--color-dark);
     color: var(--color-primary);
 }
 
@@ -354,6 +521,12 @@ input[type="email"] {
     padding: 10px;
 }
 
+/* NEWSLETTER */
+
+#btn-news {
+    margin: 0!important;
+}
+
 /* FIRMA */
 
 #copyright {
@@ -368,4 +541,3 @@ input[type="email"] {
 #copyright p {
     margin-bottom: 0 !important;
 }
-
