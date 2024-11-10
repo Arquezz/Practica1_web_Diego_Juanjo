@@ -212,11 +212,12 @@
   
   .custom-toggler .navbar-toggler-icon::after {
     top: 8px; 
+  }
   
-  .custom-toggler:focus,
+.custom-toggler:focus,
 .custom-toggler:active {
-  outline: none; 
-  box-shadow: none; 
+outline: none; 
+box-shadow: none; 
 }
 
 
@@ -340,6 +341,4 @@ input[type="email"] {
     #noticias h1 {
         font-size: 5vh;
     }
-    }
 }
-
