@@ -20,17 +20,17 @@
     <header class="header">
         <a href="index.html" class="navbar-brand">
             <img src="media/img/LOGOACERO.svg" alt="Acero Magazine Logo" id="header-logo" />
-          </a>
+        </a>
 
-        <!-- Menú de Navegación -->
+        <!-- Menú -->
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <!-- Botón de Menú en Pantallas Pequeñas -->
+                <!-- Botón Hamburguesa -->
                 <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <!-- Menú en Pantallas Grandes -->
+                <!-- Menú Grande -->
                 <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navbarNav">
                     <ul class="navbar-nav text-center">
                         <li class="nav-item">
@@ -48,7 +48,7 @@
                     </ul>
                 </div>
                 
-                <!-- Menú Offcanvas para Pantallas Pequeñas -->
+                <!-- Menú Hamburguesa -->
                 <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <object data="media/img/LOGOACEROBlanco.svg" width="50%" aria-label="Logo Acero"></object>
@@ -81,12 +81,11 @@
         <div class="container-fluid text-center mb-5">
             <div class="row">
                 <div id="portada_noticias" class="col-12">
-                    <img src="media/img/portada_noticia.jpg" class="img-fluid portada-img" alt="Portada de noticia">
                 </div>
                 <div class="col-12">
                     <h1 class="titulos">CONCIERTO DE DEI V EN MADRID</h1>
                 </div>
-                <a href="#contenido-noticia" class="flecha-abajo">
+                <a href="#principio_noticia" class="flecha-abajo">
                     <i class="fas fa-arrow-down"></i>
                 </a>
             </div>
@@ -96,7 +95,7 @@
       
         
 
-                <div  class="cabecera-noticia">
+                <div id="principio_noticia" class="cabecera-noticia">
                 
                          <h2> ¿QUIÉN ES DEI V? </h2>
                          <p class="pt-noticias" >Empezó a sonar y toda la audiencia allí presente levantó su teléfono para conservar, de alguna forma, el momento tan especial. El artista, con chaqueta, gorra y gafas de sol incluidas, se subió al escenario para demostrar, durante la hora que duró el show, por qué es uno de los artistas del género urbano que más ha crecido en los últimos años.</p>
@@ -182,7 +181,6 @@
                     <div class="container">
                         <div id="carouselNoticiasRelacionadas" class="carousel slide mt-5" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <!-- Primera fila de noticias -->
                                 <div class="carousel-item active">
                                     <div class="row">
                                         <div class="col-md-4 d-flex flex-column align-items-center text-center">
@@ -205,7 +203,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Segunda fila de noticias -->
                                 <div class="carousel-item">
                                     <div class="row">
                                         <div class="col-md-4 d-flex flex-column align-items-center text-center">
